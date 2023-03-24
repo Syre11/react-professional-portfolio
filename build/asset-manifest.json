@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.js": "/static/js/main.aabfba35.js",
+    "static/media/FalkenColours.png": "/static/media/FalkenColours.914570acfb7c53497322.png",
+    "index.html": "/index.html",
+    "main.aabfba35.js.map": "/static/js/main.aabfba35.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.aabfba35.js"
+  ]
+}
