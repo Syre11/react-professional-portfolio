@@ -1,44 +1,35 @@
-import React, { useState } from "react";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 export default function ContactMe() {
-  const [fullName, setFullName] = useState('')
-  const [email, setEmail] = useState('')
-  const [message, setMessage] = useState('')
+  const contactForm = useRef();
 
-  const handleInputChange = (event) => {
-    const inputType = event.target.name
-    const inputValue = event.target.value
-
-    if (inputType === "fullName") {
-      setFullName(inputValueemail)
-    } else if (inputType === "email") {
-      setEmail(inputValue)
-    } else {
-      setMessage(inputValue)
-    }
-  }
-
-  const handleFormSubmit = (event) => {
+  const sendEmail = (event) => {
     event.preventDefault();
 
-    setFullName('');
-    setEmail('');
-    setMessage('');
+    emailjs.sendForm('syre11prof_portfolio', 'reactPortfolio_template', contactForm.current, 'jxuj-rEQG5Xro5f6O')
+      .then((result) => {
+          console.log(result.text);
+          window.alert("Message Sent Successfully");
+      }, (error) => {
+          console.log(error.text);
+          window.alert("Message failed to send");
+      });
   };
 
   return (
-    <div className="">
-      <h2>Contact Me</h2>
-        <form>
-          {/* make these labels hover over the text box, then slide up, out of the way when you hover ************see supportimages/contactFormIdea*************/}
-          <label for="fullName">Full name</label>
-          <input name="fullName"value={fullName} onChange={handleInputChange}></input>
-          <label for="email">E-mail</label>
-          <input name="email" type="email" value={email}></input>
-          <label for="message">Message</label>
-          <textarea name="message" value={message}></textarea>
-          <button type="submit" onClick={handleFormSubmit}>Send Message</button>
-        </form>
+    <div>
+      <h4>Use the form below to send a message directly to my email.</h4>
+      <form ref={contactForm} onSubmit={sendEmail}>
+        <label>Full Name</label>
+        <input type="text" name="from_name" />
+        <label>Email</label>
+        <input type="email" name="reply_to" />
+        <label>Message</label>
+        <textarea name="message" />
+        <input type="submit" value="Send Message"/>
+      </form>
     </div>
+
   );
-}
+};
