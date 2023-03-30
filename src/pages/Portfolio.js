@@ -28,7 +28,7 @@ export default function Portfolio() {
     }
   ]
   return (
-    <div className="">
+    <div className="bg-whiteGeo">
       <h2>My Portfolio</h2>
       <div>
         {/* May need to put the return info elsewhere to add functionality for IF there isn't a deployed link */}

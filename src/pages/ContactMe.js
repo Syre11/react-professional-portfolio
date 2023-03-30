@@ -18,7 +18,7 @@ export default function ContactMe() {
   };
 
   return (
-    <div>
+    <div className='bg-whiteGeo'>
       <h4>Use the form below to send a message directly to my email.</h4>
       <form ref={contactForm} onSubmit={sendEmail}>
         <label>Full Name</label>

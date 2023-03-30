@@ -2,7 +2,7 @@ import React from "react";
 
 export default function AboutMe() {
   return (
-    <div className="">
+    <div className="bg-whiteGeo">
       <div className="">
         <h2 className="">About Me</h2>
       </div>

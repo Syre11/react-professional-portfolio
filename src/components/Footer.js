@@ -5,7 +5,7 @@ import linkedInLogo from "../assets/images/LinkedIn-logo.png";
 
 export default function Footer() {
   return (
-    <footer className="">
+    <footer className="bg-whiteGeo">
       <div className="">
         <div className="">          
           <img src={githubLogo} alt="GitHub logo"></img>
