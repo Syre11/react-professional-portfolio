@@ -5,15 +5,15 @@ import linkedInLogo from "../assets/images/LinkedIn-logo.png";
 
 export default function Footer() {
   return (
-    <footer className="bg-whiteGeo">
+    <footer className="bg-teal">
       <div className="">
         <div className="">          
-          <img src={githubLogo} alt="GitHub logo"></img>
-          <a href="https://github.com/Syre11">Syre11</a>
+          
+          <a href="https://github.com/Syre11"><img src={githubLogo} alt="GitHub logo"></img></a>
         </div>
         <div>
-          <img src={linkedInLogo} alt="LinkedIn logo"></img>
-          <a href="https://www.linkedin.com/in/spencer-rye/">LinkedIn</a>
+          
+          <a href="https://www.linkedin.com/in/spencer-rye/"><img src={linkedInLogo} alt="LinkedIn logo"></img></a>
         </div>
       </div>
     </footer>

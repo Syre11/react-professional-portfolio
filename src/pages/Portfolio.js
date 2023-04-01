@@ -30,18 +30,18 @@ export default function Portfolio() {
   return (
     <div className="bg-whiteGeo">
       <h2>My Portfolio</h2>
-      <div>
+      <div className="">
         {/* May need to put the return info elsewhere to add functionality for IF there isn't a deployed link */}
         {myProjects.map((projects) => {
           return (
-            <div>
+            <div className="">
               <img src={projects.backgroundImg}></img>
               <a href={projects.deployedLink}>
                 <h3>
                   {projects.projTitle}
                 </h3>
               </a>
-              <a href={projects.gitRepo}></a>              
+              <a href={projects.gitRepo}>GitRepo</a>              
             </div>
           )
         })}

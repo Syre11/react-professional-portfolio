@@ -9,8 +9,7 @@ module.exports = {
       'blue': '#305fd8',
     },
     fontFamily: {
-      sans: ['Graphik', 'sans-serif'],
-      serif: ['Merriweather', 'serif'],
+      headerFont: ['Russo One'],
     },
     extend: {
       backgroundImage: {
