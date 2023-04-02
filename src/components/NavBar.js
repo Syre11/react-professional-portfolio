@@ -2,7 +2,7 @@ import React from "react";
 
 export default function NavBar({ currentPage, handlePageChange }) {
   return (
-    <div className="">
+    <div className="text-xl font-bodyFont">
       <div className="flex">
         <div className="px-2">
           <a

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function AboutMe() {
   return (
-    <div className="bg-whiteGeo">
+    <div className="bg-whiteGeo bg-cover font-bodyFont px-12 py-4">
       <div className="">
         <h2 className="">About Me</h2>
       </div>

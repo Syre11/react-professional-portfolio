@@ -22,7 +22,7 @@ export default function Body({ currentPage }) {
   };
 
   return (
-    <main className="">
+    <main className="mb-auto">
       {renderPage()}
     </main>
   )
